@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+     <h1 id="title">Bookshop Customers Survey Form</h1>
+    <p id="description"> <mark>Your suggestions are valuable  for our improvement and your satisfaction.</mark></p>
+    </header>
+    <div class="container">
+    <div class="groups">
+    <form id="survey-form" method="post">
+      
+      <label id="name-label" for="name">Name</label>
+      <input type="text" class="width-control" id="name" name="name" placeholder="Enter your name" required/></div>
+      <div class="groups">
+      <label id="email-label" for="email">Email</label>
+      <input type="email" class="width-control" id="email" placeholder="Enter your Email" required/></div>
+      <div class="groups">
+      <label id="number-label" for="number">Age (optional)</label>
+      <input type="number" class="width-control" id="number" min="18" max="60" placeholder="Enter your age"></div>
+      <div class="groups">
+      <label id="drop-label" for="dropdown">Which option best describes your current role?</label>
+      <select id="dropdown" class="width-control">
+        <option>Select your current role</option>
+        <option>Student</option>
+        <option>Teacher</option>
+        <option>Business owner</option>
+        <option>Private sector related job</option>
+        <option>Public sector related job</option>
+        <option>Other</option>
+      </select></div>
+      <div class="groups">
+      <label> Would you recommend our bookshop to anyone?</label>
+      <label><input type="radio" class="input-radio" name="op" checked>Absolutely!</label>
+      
+      <label><input type="radio" class="input-radio" name="op">Not really</label>
+      
+      <label><input type="radio" class="input-radio" name="op">Dunno!</label></div>
+      
+    <div class="groups">
+    <label id="fav-label" for="fav">What kind of books that catches you?</label>
+    <select id="fav" class="width-control">
+      <option>Select</option>
+      <option>Fiction</option>
+      <option>Non-Fiction</option>
+      <option>Poetry</option>
+      <option>Thriller</option>
+      <option>Encyclopedia</option>
+    </select></div>
+      <div class="groups">
+    <label>What would you like us to improve?</label>
+    <label><input type="checkbox" class="input-checkbox" value="Sitting areas">Sitting areas</label>
+    
+    <label><input type="checkbox" class="input-checkbox" value="Book collections">Book collections</label>
+    
+    <label><input type="checkbox" class="input-checkbox" value="Prices">Prices</label>
+    
+    <label><input type="checkbox" class="input-checkbox" value="Environment">Environment</label>
+    
+    <label><input type="checkbox" class="input-checkbox" value="OBC">Online books collections</label>
+    
+    <label><input type="checkbox" class="input-checkbox" value="CS">Customer Service</label></div>
+    <div class="groups">
+    <label for="ta">Any comments or suggestions?</label>
+    <textarea id="ta" class="width-control" min="10" max="100" max placeholder="Enter your suggestions here..."></textarea>
+    <button type="submit" id="submit" class="width-control">Submit</button></div>
+  </div>
+</form>
+  </body>
+</html>
